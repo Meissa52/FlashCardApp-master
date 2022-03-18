@@ -1,0 +1,73 @@
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut{
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes colorChangeGreen{
+    0% {color:black;}
+    100% {color:rgb(139,197,0);}
+}
+
+@keyframes fadeInTxt{
+    0% {
+        position: relative;
+        top:50%;
+        opacity: 0;
+    }
+    100% {
+        top:0;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOut{
+    0% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight{
+    from{
+        transform:translateX(-300em);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0em);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(300em);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0em);
+        opacity: 1;
+    }
+}
+
+
+.fadeOut{
+    animation: fadeOut;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+.fadeIn{
+    animation: fadeIn;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
